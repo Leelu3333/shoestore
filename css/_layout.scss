@@ -1,0 +1,51 @@
+// 格線
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12 * $i);
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.productdetails-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+@for $i from 1 through 12 {
+  .productdetails-col-#{$i} {
+    width: calc(100% / 12 * $i);
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+.container {
+  margin: 0 auto;
+  width: 1296px;
+}
+.container-story {
+  margin: 0 auto;
+  width: 856px;
+}
+.header {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 151px 0;
+  margin-bottom: 64px;
+  text-align: center;
+}
+.footer {
+  padding: 32px 0 64px 0;
+  text-align: center;
+}
+.footer-color {
+  background-color: $neutral-100;
+}

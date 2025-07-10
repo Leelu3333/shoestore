@@ -1,0 +1,122 @@
+.intro {
+  margin-bottom: 48px;
+  padding: 32px;
+  background-color: $primary-100;
+  text-align: center;
+}
+.introduction-img {
+  margin-left: -110px;
+  margin-right: -110px;
+  max-width: 1076px;
+  margin-bottom: 24px;
+}
+.course {
+  text-indent: 1em;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+// 漢堡屑
+.breadcrumb-item {
+  display: inline-block;
+}
+.breadcrumb-item:not(:last-child)::after {
+  margin: 0 12px;
+  content: '/';
+  color: $neutral-300;
+}
+
+// 按鈕
+.btn {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-neutral {
+  color: $neutral-900;
+}
+.btn-dark {
+  color: #ffffff;
+  background-color: $neutral-900;
+  padding: 12px 24px;
+}
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn-size {
+  border: 1px solid $neutral-300;
+  padding: 12px 24px;
+  width: 160px;
+  &:hover {
+    border: 1px solid $neutral-600;
+  }
+  &-active {
+    border: 1px solid $neutral-900;
+  }
+}
+.btn-test {
+  display: block;
+  width: 100%;
+  border: 1px solid $neutral-900;
+  padding: 12px 0;
+  i {
+    margin-right: 2px;
+  }
+}
+.btn-like {
+  display: block;
+  width: 100%;
+  border: 1px solid $neutral-900;
+  padding: 12px 0;
+  i {
+    margin-right: 2px;
+  }
+  &:hover {
+    background-color: $neutral-900;
+    color: #ffffff;
+    i {
+      color: #ffffff;
+    }
+  }
+  &:active {
+    background-color: transparent;
+    color: $neutral-900;
+    i {
+      color: $neutral-900;
+    }
+  }
+}
+.btn-page {
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: $neutral-100;
+  }
+  &:active {
+    background-color: $primary-300;
+  }
+}
+// 其他
+.active {
+  background-color: $primary-300;
+}
+.bg-primary-200 {
+  background-color: $primary-200;
+}
+.border-bottom-primary {
+  border-bottom: 1px solid $primary-400;
+}
+.border-bottom-neutral {
+  border-bottom: 1px solid $neutral-300;
+}
+.border-top-neutral {
+  border-top: 1px solid $neutral-300;
+}
+.bi-arrow-up-right {
+  width: 20px;
+  height: 20px;
+}
+.border-left-3 {
+  padding-left: 12px;
+  border-left: 3px solid #dee2e6;
+}
