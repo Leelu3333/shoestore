@@ -7,11 +7,11 @@
 .introduction-img {
   margin-left: -110px;
   margin-right: -110px;
-  max-width: 1076px;
   margin-bottom: 24px;
 }
 .course {
-  text-indent: 1em;
+  padding-left: 40px;
+  text-indent: -2em;
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -64,7 +64,6 @@
   }
 }
 .btn-like {
-  display: block;
   width: 100%;
   border: 1px solid $neutral-900;
   padding: 12px 0;
@@ -85,6 +84,23 @@
       color: $neutral-900;
     }
   }
+}
+.btn-heart {
+  padding: 12px;
+
+  &:active {
+    i {
+      color: $neutral-900;
+      background-color: #ffffff;
+    }
+  }
+  // &:active {
+  //   background-color: $neutral-900;
+  //   color: $neutral-900;
+  //   i {
+  //     color: $neutral-900;
+  //   }
+  // }
 }
 .btn-page {
   width: 40px;
@@ -112,11 +128,42 @@
 .border-top-neutral {
   border-top: 1px solid $neutral-300;
 }
-.bi-arrow-up-right {
-  width: 20px;
-  height: 20px;
-}
 .border-left-3 {
   padding-left: 12px;
   border-left: 3px solid #dee2e6;
+}
+.btn-person-icon {
+  padding: 12px;
+}
+.btn-arrow-right {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .introduction-img {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  .intro {
+    margin-bottom: 32px;
+    padding: 24px;
+    text-align: left;
+  }
+  .btn-dark {
+    padding: 8px 16px;
+  }
+  .maybe-img {
+    max-width: 300px;
+    height: 300px;
+    min-width: auto;
+  }
+  .maybe-box {
+    column-gap: 16px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
 }

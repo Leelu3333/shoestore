@@ -137,6 +137,9 @@ $neutral-900: #212529;
   max-width: 64px;
 }
 // margin
+.ml-auto {
+  margin-left: auto;
+}
 .my-12 {
   margin: 12px 0;
 }
@@ -246,6 +249,9 @@ $neutral-900: #212529;
   &-24 {
     padding-bottom: 24px;
   }
+  &-64 {
+    padding-bottom: 64px;
+  }
 }
 .pr-4 {
   padding-right: 4px;
@@ -269,9 +275,18 @@ $neutral-900: #212529;
   &-24 {
     padding: 24px 0;
   }
+  &-64 {
+    padding: 64px 0;
+  }
 }
 
 // display
+.d-none {
+  display: none;
+}
+.d-b {
+  display: block;
+}
 .d-i-b {
   display: inline-block;
 }
@@ -289,4 +304,125 @@ $neutral-900: #212529;
 }
 .justify-space-between {
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .h-sm {
+    &1 {
+      line-height: 1.2;
+      font-size: 40px;
+    }
+    &2 {
+      line-height: 1.2;
+      font-size: 32px;
+    }
+    &3 {
+      line-height: 1.2;
+      font-size: 28px;
+    }
+    &4 {
+      line-height: 1.2;
+      font-size: 24px;
+    }
+    &5 {
+      line-height: 1.2;
+      font-size: 20px;
+    }
+    &6 {
+      line-height: 1.2;
+      font-size: 16px;
+    }
+  }
+  .fz-sm {
+    &-12 {
+      font-size: 12px;
+    }
+    &-14 {
+      font-size: 14px;
+    }
+    &-16 {
+      font-size: 16px;
+    }
+    &-20 {
+      font-size: 20px;
+    }
+    &-48 {
+      font-size: 48px;
+    }
+    &-64 {
+      font-size: 64px;
+    }
+  }
+  .pb-sm {
+    &-24 {
+      padding-bottom: 24px;
+    }
+  }
+  .py-sm {
+    &-12 {
+      padding: 12px 0;
+    }
+    &-32 {
+      padding: 32px 0;
+    }
+  }
+  .mt-sm {
+    &-0 {
+      margin-top: 0px;
+    }
+    &-24 {
+      margin-top: 24px;
+    }
+  }
+  .mb-sm {
+    &-4 {
+      margin-bottom: 4px;
+    }
+    &-8 {
+      margin-bottom: 8px;
+    }
+    &-12 {
+      margin-bottom: 12px;
+    }
+    &-16 {
+      margin-bottom: 16px;
+    }
+    &-24 {
+      margin-bottom: 24px;
+    }
+    &-32 {
+      margin-bottom: 32px;
+    }
+    &-40 {
+      margin-bottom: 40px;
+    }
+  }
+  .mr-sm {
+    &-8 {
+      margin-right: 8px;
+    }
+  }
+  .ml-sm {
+    &-12 {
+      margin-left: 12px;
+    }
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-contents {
+    display: contents;
+  }
+  .d-f-w-unset {
+    flex-wrap: wrap;
+  }
+  .column-sm-gap-16 {
+    column-gap: 16px;
+  }
+  .overflow-sm-auto {
+    overflow-x: auto;
+  }
 }

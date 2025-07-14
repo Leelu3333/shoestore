@@ -11,6 +11,8 @@
 img {
   display: block;
   max-width: 100%;
+  min-width: 0;
+  object-fit: cover;
 }
 a {
   text-decoration: none;

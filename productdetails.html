@@ -7,79 +7,80 @@
     <title>產品詳情頁</title>
   </head>
   <body>
-    <nav class="container">
-      <div class="py-16 mb-32 d-flex justify-space-between">
-        <ul class="d-flex align-center">
-          <li>
+    <header>
+      <nav class="container">
+        <div class="py-16 py-sm-12 d-flex">
+          <a href="index.html">
             <img
               src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/logo.svg"
               alt="logo"
-              class="mr-40"
-            />
-          </li>
-          <li class="mr-40 my-12">
-            <a href="index.html" class="fw-500 text-primay">商品列表</a>
-          </li>
-          <li class="my-12">
-            <a href="story.html" class="fw-500 text-primay">品牌故事</a>
-          </li>
-        </ul>
-        <div class="d-flex align-center">
-          <a href="#">
-            <i class="bi bi-person text-primay person-icon"></i>
-          </a>
+              class="mr-48"
+          /></a>
+          <ul class="d-flex d-sm-none align-center nav-list">
+            <li class="mr-40 my-12">
+              <a href="index.html" class="fw-500 text-primay">商品列表</a>
+            </li>
+            <li class="my-12">
+              <a href="story.html" class="fw-500 text-primay">品牌故事</a>
+            </li>
+          </ul>
+          <div class="ml-auto btn-person-icon">
+            <a href="#">
+              <i class="bi bi-person text-primay person-icon"></i>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
       <div class="container">
-        <div class="row mb-64">
+        <div class="row mb-64 mb-sm-40">
           <!-- 產品圖片 -->
-          <div class="col-7">
+          <div class="col-7 d-sm-contents">
             <div class="productdetails-row">
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 pb-8 col-sm-12 pb-sm-24">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true"
                   alt="image"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 pb-8 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-1.png?raw=true"
                   alt="image1"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 pb-8 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-2.png?raw=true"
                   alt="image2"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 pb-8 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-3.png?raw=true"
                   alt="image3"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 pb-8 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-4.png?raw=true"
                   alt="image4"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 pb-8 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-5.png?raw=true"
                   alt="image5"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-6.png?raw=true"
                   alt="image6"
                 />
               </div>
-              <div class="productdetails-col-6 pb-8">
+              <div class="productdetails-col-6 d-sm-none">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-7.png?raw=true"
                   alt="image7"
@@ -88,29 +89,29 @@
             </div>
           </div>
           <!-- 產品詳情 -->
-          <div class="col-5">
+          <div class="col-5 col-sm-12">
             <!-- 漢堡屑 -->
-            <nav class="mb-12">
+            <nav class="mb-12 mb-sm-8">
               <ol class="nav-breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#" class="fw-500 text-secondary">首頁</a>
+                  <a href="#" class="fw-500 fz-sm-14 text-secondary">首頁</a>
                 </li>
                 <li class="breadcrumb-item">
-                  <a href="#" class="fw-500 text-secondary">女鞋</a>
+                  <a href="#" class="fw-500 fz-sm-14 text-secondary">女鞋</a>
                 </li>
                 <li class="breadcrumb-item">
-                  <a href="#" class="fw-500 text-secondary">滑板鞋</a>
+                  <a href="#" class="fw-500 fz-sm-14 text-secondary">滑板鞋</a>
                 </li>
                 <li class="breadcrumb-item">
-                  <a href="#" class="fw-500 text-primay">Platform 404</a>
+                  <p class="fw-500 fz-sm-14 text-primay">Platform 404</p>
                 </li>
               </ol>
             </nav>
             <!-- 商品介紹 -->
             <div class="mb-32">
-              <h2 class="fw-700 h2 mb-16">Platform 404</h2>
-              <div class="d-flex align-center mb-16">
-                <h5 class="fw-700 h5 text-highlight mr-8">NT$2,600</h5>
+              <h2 class="fw-700 h2 h-sm4 mb-16 mb-sm-12">Platform 404</h2>
+              <div class="d-flex align-center mb-16 mb-sm-12">
+                <h5 class="fw-700 h5 h-sm6 text-highlight mr-8">NT$2,600</h5>
                 <del class="fw-400 fz-14 text-muted">NT$3,200</del>
               </div>
               <p class="fw-400 text-primay mb-12">
@@ -144,7 +145,7 @@
               </ul>
             </div>
             <!-- 商品尺寸 -->
-            <div class="mb-48">
+            <div class="mb-48 mb-sm-24">
               <p class="fw-400 text-primay mb-8">尺寸</p>
               <div class="d-flex d-f-w">
                 <button
@@ -187,11 +188,20 @@
             </div>
             <!-- 收藏及試穿按鈕 -->
             <div class="mb-32 d-flex">
-              <button class="mr-8 fw-500 fz-16 btn btn-like radius-sm">
+              <button
+                class="mr-8 fw-500 fz-16 d-b btn btn-like radius-sm d-sm-none"
+              >
                 <i class="bi bi-heart"></i>加入收藏
               </button>
-              <button class="fw-500 fz-16 btn btn-dark btn-test radius-sm">
+              <button
+                class="fw-500 fz-16 mr-sm-8 btn btn-dark btn-test radius-sm"
+              >
                 <i class="bi bi-handbag"></i>門市預約試穿
+              </button>
+              <button
+                class="fw-500 fz-16 btn btn-heart radius-sm d-none d-sm-block"
+              >
+                <i class="bi bi-heart"></i>
               </button>
             </div>
             <!-- 商品詳細 -->
@@ -230,87 +240,85 @@
             </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <h4 class="fw-700 h4 mb-16 mt-48">你可能也喜歡...</h4>
+        <h4 class="fw-700 h4 mb-16 mt-48 mt-sm-0">你可能也喜歡...</h4>
+        <div class="row mb-48 mb-sm-40 maybe-box">
+          <div class="col-3 d-sm-contents">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
+                alt="product2"
+                class="mb-12 maybe-img"
+              />
+              <h6 class="fw-700 lh-12 text-primay mb-4">VM001</h6>
+              <p class="fw-500 text-primay">NT$2,600</p>
+            </a>
           </div>
-          <div class="row mb-48">
-            <div class="col-3">
-              <a href="#">
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
-                  alt="product2"
-                  class="mb-12"
-                />
-                <h6 class="fw-700 lh-12 text-primay mb-4">VM001</h6>
-                <p class="fw-500 text-primay">NT$2,600</p>
-              </a>
-            </div>
-            <div class="col-3">
-              <a href="#">
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
-                  alt="product3"
-                  class="mb-12"
-                />
-                <h6 class="fw-700 lh-12 text-primay mb-4">Melty Kiss</h6>
-                <p class="fw-500 text-primay">NT$4,000</p>
-              </a>
-            </div>
-            <div class="col-3">
-              <a href="#">
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
-                  alt="product4"
-                  class="mb-12"
-                />
-                <h6 class="fw-700 lh-12 text-primay mb-4">BOOMBLOK</h6>
-                <p class="fw-500 text-primay">NT$3,200</p>
-              </a>
-            </div>
-            <div class="col-3">
-              <a href="#">
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
-                  alt="product7"
-                  class="mb-12"
-                />
-                <h6 class="fw-700 lh-12 text-primay mb-4">Sugar Snap</h6>
-                <p class="fw-500 text-primay">NT$3,200</p>
-              </a>
-            </div>
+          <div class="col-3 d-sm-contents">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
+                alt="product3"
+                class="mb-12 maybe-img"
+              />
+              <h6 class="fw-700 lh-12 text-primay mb-4">Melty Kiss</h6>
+              <p class="fw-500 text-primay">NT$4,000</p>
+            </a>
+          </div>
+          <div class="col-3 d-sm-contents">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
+                alt="product4"
+                class="mb-12 maybe-img"
+              />
+              <h6 class="fw-700 lh-12 text-primay mb-4">BOOMBLOK</h6>
+              <p class="fw-500 text-primay">NT$3,200</p>
+            </a>
+          </div>
+          <div class="col-3 d-sm-contents">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
+                alt="product7"
+                class="mb-12 maybe-img"
+              />
+              <h6 class="fw-700 lh-12 text-primay mb-4">Sugar Snap</h6>
+              <p class="fw-500 text-primay">NT$3,200</p>
+            </a>
           </div>
         </div>
       </div>
       <div
-        class="mt-40 py-24 d-flex align-center justify-center bg-primary-200"
+        class="mt-sm-24 py-24 d-flex align-center justify-center bg-primary-200"
       >
-        <h4 class="fw-700 h4 mr-24">加入會員取得 9 折優惠</h4>
+        <h4 class="fw-700 h4 h-sm5 mr-24">加入會員取得 9 折優惠</h4>
         <button class="btn btn-dark radius-sm fw-500 fz-16">馬上註冊</button>
       </div>
     </main>
-    <div class="footer-color pt-64">
-      <nav class="py-12 mb-24">
-        <div class="container d-flex justify-space-between">
+    <footer class="footer-bg py-64 py-sm-32">
+      <div class="container">
+        <nav class="mb-24 footer-nav">
           <img
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/logo.svg"
             alt="logo"
-            class="mr-40"
+            class="mb-sm-8"
           />
-          <ul class="d-flex align-center">
-            <li class="mr-40 my-12">
-              <a href="#" class="fw-500 text-primay">商品列表</a>
-            </li>
-            <li class="my-12">
-              <a href="story.html" class="fw-500 text-primay">品牌故事</a>
-            </li>
-          </ul>
+          <div class="ml-auto ml-sm-12">
+            <ul class="d-flex d-sm-block">
+              <li class="mr-40 py-12 mb-sm-4">
+                <a href="index.html" class="fw-500 text-primay">商品列表</a>
+              </li>
+              <li class="py-12">
+                <a href="story.html" class="fw-500 text-primay">品牌故事</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="text-align-center pt-32 border-top-neutral">
+          <p class="fz-14 mb-4 text-secondary">Copyright ©2025 URBNSTYLE</p>
+          <p class="fz-14 text-secondary">All Rights Reserved.</p>
         </div>
-      </nav>
-      <footer class="footer container border-top-neutral">
-        <p class="fz-14 text-secondary">Copyright ©2025 URBNSTYLE</p>
-        <p class="fz-14 text-secondary">All Rights Reserved.</p>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
