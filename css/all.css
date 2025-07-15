@@ -918,6 +918,9 @@ body {
   background-color: #212529;
   padding: 12px 24px;
 }
+.btn-dark:hover {
+  background-color: #495057;
+}
 
 .btn:disabled {
   pointer-events: none;
@@ -968,14 +971,6 @@ body {
   color: #212529;
 }
 
-.btn-heart {
-  padding: 12px;
-}
-.btn-heart:active i {
-  color: #212529;
-  background-color: #ffffff;
-}
-
 .btn-page {
   width: 40px;
   height: 40px;
@@ -985,6 +980,15 @@ body {
 }
 .btn-page:active {
   background-color: #c0fa73;
+}
+
+.btn-person-icon {
+  padding: 12px;
+}
+
+.btn-arrow-right {
+  width: 20px;
+  height: 20px;
 }
 
 .active {
@@ -1010,15 +1014,6 @@ body {
 .border-left-3 {
   padding-left: 12px;
   border-left: 3px solid #dee2e6;
-}
-
-.btn-person-icon {
-  padding: 12px;
-}
-
-.btn-arrow-right {
-  width: 20px;
-  height: 20px;
 }
 
 @media (max-width: 768px) {

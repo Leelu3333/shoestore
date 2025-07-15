@@ -38,6 +38,9 @@
   color: #ffffff;
   background-color: $neutral-900;
   padding: 12px 24px;
+  &:hover {
+    background-color: $neutral-700;
+  }
 }
 .btn:disabled {
   pointer-events: none;
@@ -85,23 +88,6 @@
     }
   }
 }
-.btn-heart {
-  padding: 12px;
-
-  &:active {
-    i {
-      color: $neutral-900;
-      background-color: #ffffff;
-    }
-  }
-  // &:active {
-  //   background-color: $neutral-900;
-  //   color: $neutral-900;
-  //   i {
-  //     color: $neutral-900;
-  //   }
-  // }
-}
 .btn-page {
   width: 40px;
   height: 40px;
@@ -112,6 +98,14 @@
     background-color: $primary-300;
   }
 }
+.btn-person-icon {
+  padding: 12px;
+}
+.btn-arrow-right {
+  width: 20px;
+  height: 20px;
+}
+
 // 其他
 .active {
   background-color: $primary-300;
@@ -132,13 +126,7 @@
   padding-left: 12px;
   border-left: 3px solid #dee2e6;
 }
-.btn-person-icon {
-  padding: 12px;
-}
-.btn-arrow-right {
-  width: 20px;
-  height: 20px;
-}
+
 @media (max-width: 768px) {
   .introduction-img {
     margin-left: 0px;
