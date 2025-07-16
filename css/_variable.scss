@@ -307,6 +307,7 @@ $neutral-900: #212529;
 }
 
 @media (max-width: 768px) {
+  // 手機板-文字大小
   .h-sm {
     &1 {
       line-height: 1.2;
@@ -353,6 +354,7 @@ $neutral-900: #212529;
       font-size: 64px;
     }
   }
+  // 手機板-padding
   .pb-sm {
     &-24 {
       padding-bottom: 24px;
@@ -366,6 +368,7 @@ $neutral-900: #212529;
       padding: 32px 0;
     }
   }
+  // 手機板-margin
   .mt-sm {
     &-0 {
       margin-top: 0px;
@@ -407,6 +410,7 @@ $neutral-900: #212529;
       margin-left: 12px;
     }
   }
+  // 手機板-display
   .d-sm-block {
     display: block;
   }
@@ -419,6 +423,8 @@ $neutral-900: #212529;
   .d-f-w-unset {
     flex-wrap: wrap;
   }
+
+  // 手機板-產品詳情頁面-你可能也喜歡...
   .column-sm-gap-16 {
     column-gap: 16px;
   }

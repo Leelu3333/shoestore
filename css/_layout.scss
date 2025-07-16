@@ -13,6 +13,7 @@
   }
 }
 
+// 產品列表頁-右側產品列表-格線
 .productdetails-row {
   display: flex;
   flex-wrap: wrap;
@@ -29,33 +30,35 @@
 .container {
   margin: 0 auto;
   max-width: 1296px;
-}
-.container-story {
-  margin: 0 auto;
-  max-width: 856px;
+  &-story {
+    // 品牌故事頁
+    margin: 0 auto;
+    max-width: 856px;
+  }
 }
 .banner {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  &-bg {
+    background-color: #00000066;
+    padding: 151px 0;
+    margin-bottom: 64px;
+    text-align: center;
+  }
 }
-.banner-bg {
-  background-color: #00000066;
-  padding: 151px 0;
-  margin-bottom: 64px;
-  text-align: center;
+.footer {
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+  &-bg {
+    background-color: $neutral-100;
+  }
 }
-
-.footer-bg {
-  background-color: $neutral-100;
-}
-.footer-nav {
-  display: flex;
-  align-items: center;
-}
-
 @media (max-width: 768px) {
+  // 手機版-格線
   @for $i from 1 through 12 {
     .col-sm-#{$i} {
       width: calc(100% / 12 * $i);
@@ -63,6 +66,7 @@
       padding-right: 12px;
     }
   }
+  // 手機版-格線-產品列表頁-左側產品名稱列表
   .row-sm-pjl {
     display: flex;
     flex-wrap: wrap;
@@ -76,17 +80,24 @@
       padding-right: 6px;
     }
   }
+  // 手機版-格線-產品詳情頁-產品圖片
   .productdetails-row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -12px;
-    margin-left: -12px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .productdetails-col-sm-12 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .container {
     padding: 0 12px;
-  }
-  .container-story {
-    padding: 0 12px;
+    &-story {
+      // 手機版-品牌故事頁
+      padding: 0 12px;
+    }
   }
   .banner-bg {
     padding: 87px 0;

@@ -1,14 +1,17 @@
+// 品牌故事介紹
 .intro {
   margin-bottom: 48px;
   padding: 32px;
   background-color: $primary-100;
   text-align: center;
 }
+// 品牌故事照片
 .introduction-img {
   margin-left: -110px;
   margin-right: -110px;
   margin-bottom: 24px;
 }
+// 品牌故事頁-品牌歷程區塊
 .course {
   padding-left: 40px;
   text-indent: -2em;
@@ -18,11 +21,11 @@
 // 漢堡屑
 .breadcrumb-item {
   display: inline-block;
-}
-.breadcrumb-item:not(:last-child)::after {
-  margin: 0 12px;
-  content: '/';
-  color: $neutral-300;
+  &:not(:last-child)::after {
+    margin: 0 12px;
+    content: '/';
+    color: $neutral-300;
+  }
 }
 
 // 按鈕
@@ -31,9 +34,7 @@
   background-color: transparent;
   cursor: pointer;
 }
-.btn-neutral {
-  color: $neutral-900;
-}
+// 按鈕黑底
 .btn-dark {
   color: #ffffff;
   background-color: $neutral-900;
@@ -42,10 +43,26 @@
     background-color: $neutral-700;
   }
 }
+// 禁用按鈕
 .btn:disabled {
   pointer-events: none;
 }
-
+// 文字hover效果
+.btn-hover-primary-400 {
+  &:hover {
+    color: $primary-400;
+  }
+}
+.btn-hover-primary-500 {
+  &:hover {
+    color: $primary-500;
+  }
+}
+//nav-person-icon
+.btn-person-icon {
+  padding: 12px;
+}
+// 商品詳情頁面-尺寸按鈕
 .btn-size {
   border: 1px solid $neutral-300;
   padding: 12px 24px;
@@ -57,6 +74,7 @@
     border: 1px solid $neutral-900;
   }
 }
+// 商品詳情頁面-預約試穿按鈕
 .btn-test {
   display: block;
   width: 100%;
@@ -66,6 +84,7 @@
     margin-right: 2px;
   }
 }
+// 商品詳情頁面-加入收藏按鈕
 .btn-like {
   width: 100%;
   border: 1px solid $neutral-900;
@@ -88,7 +107,9 @@
     }
   }
 }
+// 商品列表頁-頁數按鈕
 .btn-page {
+  color: $neutral-900;
   width: 40px;
   height: 40px;
   &:hover {
@@ -98,41 +119,46 @@
     background-color: $primary-300;
   }
 }
-.btn-person-icon {
-  padding: 12px;
+// btn-page中已選取
+.active {
+  background-color: $primary-300;
 }
+//品牌故事-品牌小故事icon
 .btn-arrow-right {
   width: 20px;
   height: 20px;
 }
 
-// 其他
-.active {
-  background-color: $primary-300;
-}
+// 加入會員區塊的背景
 .bg-primary-200 {
   background-color: $primary-200;
 }
+// 下底線顏色為primary
 .border-bottom-primary {
   border-bottom: 1px solid $primary-400;
 }
+// 下底線顏色為neutral
 .border-bottom-neutral {
   border-bottom: 1px solid $neutral-300;
 }
+// 上邊線顏色為neutral
 .border-top-neutral {
   border-top: 1px solid $neutral-300;
 }
+// 品牌故事-品牌理念-左邊線
 .border-left-3 {
   padding-left: 12px;
   border-left: 3px solid #dee2e6;
 }
 
 @media (max-width: 768px) {
+  // 品牌故事頁-鞋子圖片
   .introduction-img {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 16px;
   }
+  // 品牌故介紹
   .intro {
     margin-bottom: 32px;
     padding: 24px;
@@ -141,17 +167,22 @@
   .btn-dark {
     padding: 8px 16px;
   }
-  .maybe-img {
-    max-width: 300px;
-    height: 300px;
-    min-width: auto;
-  }
-  .maybe-box {
-    column-gap: 16px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-bottom: 40px;
+  // 手機板-產品詳情頁面-你可能也喜歡...
+  .maybe {
+    // 圖片
+    &-img {
+      max-width: 300px;
+      height: 300px;
+      min-width: auto;
+    }
+    // 區塊
+    &-box {
+      column-gap: 16px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-bottom: 40px;
+    }
   }
 }
