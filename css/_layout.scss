@@ -29,11 +29,13 @@
 }
 .container {
   margin: 0 auto;
-  max-width: 1296px;
+  max-width: 1320px;
+  padding: 0 12px;
   &-story {
     // 品牌故事頁
     margin: 0 auto;
-    max-width: 856px;
+    max-width: 1076px;
+    padding: 0 110px;
   }
 }
 .banner {
